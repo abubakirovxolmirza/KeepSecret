@@ -1,0 +1,27 @@
+{% extends 'chats/base.html' %}
+
+{% block heading %}
+    <title>Profile Info Page!</title>
+{% endblock %}
+
+{% block content %}
+    <div class="content-section">
+        {% csrf_token %}
+        <div class="mb-3 mx-auto card_obj">
+            <div class="p-3">
+                <div class="profile-user d-flex  justify-content-center">
+                    <img class="" src="{{ user.profile.profile_image.url  }}" alt="Profile Image"height="80" width="80" style="object-fit: cover;margin:auto;display: block">
+
+                </div>
+                <p></i>Username:</span> {{ user.username }}</p>
+                <p></i>Email:</span> {{ user.email }}</p>
+                {% if user.profile %}
+                    <p></i>Full Name:</span> {{ user.profile.fullname }}</p>
+                    <p></i>Phone Number:</span> {{ user.profile.phone_number }}</p>
+                    <p></i>Gender:</span> {{ user.profile.gender }}</p>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

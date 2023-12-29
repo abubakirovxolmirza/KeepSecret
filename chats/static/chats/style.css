@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background: white;
+  padding: 0 0;
+  box-shadow: 0 0 15px 2px rgb(194, 194, 194);
+}
+.navbar .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.main{
+  margin-top: 120px;
+  width: 60%;
+}
+.comment i{
+  font-size:20px;
+}
+.like i{
+  font-size:20px;
+}
+.comments{
+  background:rgb(201, 196, 196);
+  border-radius: 10px;
+  transition: display 0.4s ease-in-out;
+}
+.form-control{
+  line-height: .05;
+  width: 89%;
+}
+
+.avatar-user {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
